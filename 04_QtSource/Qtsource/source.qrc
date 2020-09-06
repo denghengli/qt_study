@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/WIN_20191207_14_42_30_Pro.jpg</file>
+        <file>image/1.png</file>
+    </qresource>
+</RCC>

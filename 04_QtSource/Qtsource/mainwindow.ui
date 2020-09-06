@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>0</y>
+      <width>296</width>
+      <height>236</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>481</width>
+      <height>441</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionOpen_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionClose_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionNew_2"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>构建</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>调试</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>工具</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="title">
+     <string>控件</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_6"/>
+   <addaction name="menu_7"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="separator"/>
+   <addaction name="actionOpen"/>
+   <addaction name="separator"/>
+   <addaction name="actionClose"/>
+  </widget>
+  <action name="actionNew">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="actionOpen_2">
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actionClose_2">
+   <property name="text">
+    <string>close</string>
+   </property>
+  </action>
+  <action name="actionNew_2">
+   <property name="text">
+    <string>new</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
