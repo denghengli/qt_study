@@ -47,3 +47,8 @@ Widget::~Widget()
 {
     delete ui;
 }
+
+void Widget::on_pushButton_clicked()
+{
+
+}

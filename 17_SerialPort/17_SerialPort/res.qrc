@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>zh_CN.qm</file>
+        <file>res/USB.png</file>
+    </qresource>
+</RCC>
