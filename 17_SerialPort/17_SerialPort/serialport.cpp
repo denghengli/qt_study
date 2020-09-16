@@ -326,19 +326,26 @@ void SerialPort::openfilebtn_clicked()
 void SerialPort::sendfilebtn_clicked()
 {
     QFile file(openfile_path);
-    if(!file.open(QIODevice::ReadOnly))
+    if (port->isOpen())
     {
-        QMessageBox::warning(this, "打开文件", "文件打开失败");
+        if(!file.open(QIODevice::ReadOnly))
+        {
+            QMessageBox::warning(this, "打开文件", "文件打开失败");
+        }
+        else
+        {
+            QByteArray array;
+            array = file.readAll();
+            //发送数据
+            port->write(array);
+            txBytes += array.length();//发送字节数累加
+            file.close();
+            QMessageBox::information(this, "发送文件", "文件发送成功");
+        }
     }
     else
     {
-        QByteArray array;
-        array = file.readAll();
-        //发送数据
-        port->write(array);
-        txBytes += array.length();//发送字节数累加
-        file.close();
-        QMessageBox::information(this, "发送文件", "文件发送成功");
+        QMessageBox::warning(this, "错误提示", "请先打开串口");
     }
 }
 
