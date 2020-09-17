@@ -522,7 +522,7 @@ void SerialPort::QStringtoHex(QByteArray& sendData,QString str)
         sendnum++;
     }
     sendData.reserve(sendnum);//重新调整大小
-    sendData = temp.left(sendnum);//返回一个字节数组，其中包含这个字节数组最左边的len字节。去掉多余字符
+    sendData = temp.left(sendnum);//返回一个 字节数组，其中包含这个字节数组最左边的len字节。去掉多余字符
 }
 
 //从串口发送数据,周期发送或点击发送按钮发送
